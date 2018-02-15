@@ -1,0 +1,4 @@
+*.sw?
+_site/
+_tmp/
+_cache/

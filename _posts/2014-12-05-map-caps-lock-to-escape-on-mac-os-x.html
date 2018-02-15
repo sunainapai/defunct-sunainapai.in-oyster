@@ -1,0 +1,51 @@
+{{ post_title="Map caps lock to escape on Mac OS X" }}
+
+<p>
+I wanted to map the caps lock key to the escape key to conveniently use
+MacVim. These are the steps I followed.
+</p>
+
+<ul>
+    <li>
+    Download <code>Seil-10.11.0.dmg</code> from <a
+    href="https://pqrs.org/osx/karabiner/seil.html">https://pqrs.org/osx/karabiner/seil.html</a>.
+    (Note: The installer is for Mac OS X 10.9 (Mavericks) or later.)
+    </li>
+
+    <li>
+    To install it, double click on <code>Seil-10.11.0.dmg</code> and
+    then open the <code>Seil.pkg</code>. The Seil installer is launched.
+    Complete the installation process with default options. Seil gets
+    installed in <code>/Applications</code> folder.
+    </li>
+
+    <li>
+    Launch Seil from Launchpad.
+    </li>
+
+    <li>
+    Change keycode of the caps lock key to <i>53</i> in the 'Change
+    the caps lock key' section.
+    <figure id="one-up">
+        <a
+        href="/img/map-caps-lock-to-escape-on-mac-os-x/seil-capslock-to-53.png"
+           target="_blank"><img
+                src="/img/map-caps-lock-to-escape-on-mac-os-x/seil-capslock-to-53.png"
+                alt="Screenshot of changing keycode of caps lock to 53 in Seil"></a>
+    </figure>
+    </li>
+
+    <li>
+    In case you still want to use the caps lock feature, you may want to map
+    the escape key to function as caps lock. To do so, change keycode of the
+    escape key to <i>57</i> in the 'Other keys' section. This effectively swaps
+    the caps lock key and the escape key.
+    <figure id="one-up">
+        <a
+        href="/img/map-caps-lock-to-escape-on-mac-os-x/seil-escape-to-57.png"
+           target="_blank"><img
+                src="/img/map-caps-lock-to-escape-on-mac-os-x/seil-escape-to-57.png"
+                alt="Screenshot of changing keycode of escape to 57 in Seil"></a>
+    </figure>
+    </li>
+</ul>

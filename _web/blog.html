@@ -1,0 +1,8 @@
+{{ post_title="All Posts" }} 
+<div id="posts">
+    <div class="article-wrap">
+        <h1>{{ printf %s "$post_title" }}</h1>
+        {{ print_archive_posts }}
+    </div>
+    <hr>
+</div>{{ include _includes/_bio.html }}{{ include _includes/_facebook-like.html }}

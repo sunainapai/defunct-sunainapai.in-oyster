@@ -1,0 +1,331 @@
+body {
+    color: #333333;
+    margin: 0;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre, code {
+    font-family: monospace,monospace; /* To make 1em = 16px in Chrome,
+    Firefox and Safari */
+    font-size: 1em; /* To make 1em = 16px in IE */
+    color: #000080;
+}
+
+pre {
+    background: #eeeeee;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    overflow: auto; /* to add a scroll bar when there is long code */
+}
+
+#home, #navigation {
+    text-transform: uppercase;
+    height: 4em;
+    display: inline-block;
+    line-height: 4em;
+    font-weight: bold;
+    vertical-align: top
+}
+
+#home {
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#navigation {
+    width: 70%;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+    text-align: center;
+}
+
+#navigation li {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+#banner {
+    height: 240px;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+}
+
+#bio {
+    text-align: center;
+    margin: 1em; 
+}
+
+#facebook-like {
+    text-align: center;
+    margin: 1em; 
+}
+
+#bio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content, #posts, #post, #recent-posts {
+    margin: 1em;
+    word-wrap: break-word; /* To prevent long text from extending out of
+    the box and breaking the layout. break-word allows unbreakable words
+    to be broken */
+}
+
+#comments {
+    margin: 1em;
+    text-align: center;
+}
+
+#related-posts {
+    margin: 1em;
+}
+
+#related-posts h3 {
+    font-size: 1.5em;
+}
+
+#related-posts h4 {
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+hr {
+    color: #cccccc;
+    background-color: #cccccc;
+    height: 1px;
+    border: none;
+}
+
+#posts h2 {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#posts h3 {
+    font-size: 1.5em;
+}
+
+#post h1 {
+    font-size: 1.5em;
+}
+
+#bio p {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#bio ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#bio li {
+    display: inline-block;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.post-info {
+    font-size: 0.8em;
+}
+
+a:link, a:visited {
+    color: #0000e0;
+    text-decoration: none
+}
+
+#home a:link, #home a:visited, #navigation a:link, #navigation
+a:visited, #posts a:link, #posts a:visited, #recent-posts a:link,
+#recent-posts a:visited, #related-posts a:link, #related-posts a:visited {
+    color: #333333;
+}
+
+a:hover, a:active {
+    text-decoration: underline
+}
+
+#home a:hover, #home a:active, #navigation a:hover, #navigation
+a:active, #posts a:hover, #posts a:active, #recent-posts a:hover,
+#recent-posts a:active, #related-posts a:active, #related-posts a:hover {
+    color: #777777;
+}
+
+figure {
+    padding-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#one-up a {
+    display: inline-block;
+    width: 100%;
+}
+
+#one-up img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#two-up a {
+    display: inline-block;
+    width: 49.5%;
+    margin-right: 1%;
+}
+
+#two-up  a:last-of-type {
+    margin-right: 0;
+}
+
+#three-up a {
+    display: inline-block;
+    width: 32.5%;
+    margin-right: 1.25%;
+}
+
+#three-up a:last-of-type {
+    margin-right: 0;
+}
+
+#two-up img, #three-up img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#two-up:before, #two-up:after, #three-up:before, #three-up:after {
+    content: "";
+    display: table;
+}
+
+#two-up:after, #three-up:after {
+    clear: both;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 1em;
+    border-left: 5px solid;
+}
+
+/* Style for computer displays */
+@media screen and (min-width: 40em) {
+
+    body {
+        min-width: 40em;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    hr {
+        height: 0;
+    }
+
+    .article-wrap hr, .post-info hr {
+        color: #cccccc;
+        background-color: #cccccc;
+        height: 1px;
+        border: none;
+    }
+
+    #home {
+        width: 25%;
+    }
+
+    #navigation {
+        width: 75%;
+    }
+
+    #banner {
+        height: 384px;
+    }
+    
+    #bio {
+        width: 25%;
+        display: inline-block;
+        text-align: left;
+        float: left;
+        margin: 0;
+    }
+
+    #facebook-like {
+        width: 25%;
+        display: inline-block;
+        float: right;
+        margin: 0;
+        padding-top: 1em;
+        overflow: hidden;
+    }
+
+    #content, #posts, #post, #recent-posts {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+    }
+
+    #bio img {
+        padding-top: 1em;
+    }
+    
+    #comments {
+        text-align: left;
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #related-posts {
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article-wrap {
+       width: 96%;
+       margin-left: 0px;
+       margin-right: auto;
+    }
+
+    .center {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #bio li {
+         display: block;
+    }
+
+    #navigation ul {
+         text-align: left;
+    }
+}

@@ -1,0 +1,35 @@
+{{ template _layouts/default.html }}
+<div id="post">
+    <div class="article-wrap">
+        <h1>{{ printf %s "$post_title" }}</h1>
+        {{ content }}
+    </div>
+
+    <div class="post-info">
+    <hr>
+        <p>
+        <strong>{{ printf %s "$post_title" }}</strong>
+        was published on {{ printf %s "$post_create_date" }}
+        {{ if [ -n "$post_update_date" ]; then printf "and was last modified on %s" "$post_update_date"; fi }}
+        {{ unset post_update_date }}
+        by <a href="/about/">{{ printf %s "$site_owner_name" }}</a>.
+        </p>
+    </div>
+    <hr>
+
+    {{ cat _includes/_disqus.html }}
+
+    <div id="related-posts">
+        <div class="article-wrap">
+            <h3>You might also enjoy</h3>
+            <ul>
+            {{ print_related_posts }}
+            </ul>
+            <h4>(<a href="/blog/">View all posts</a>)</h4>
+        </div>
+    </div>
+    <hr>
+</div>
+
+{{ include _includes/_bio.html }}
+{{ include _includes/_facebook-like.html }}

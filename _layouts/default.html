@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>{{ if [ -n "$post_title" ]; then printf "%s - " "$post_title"; fi }}
+    {{ printf %s "$site_owner_name" }}
+    </title>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<div id="home">
+    <a href="/">{{ printf %s "$site_owner_name" }}</a>
+</div><!--
+--><div id="navigation">
+    <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/about/">About</a></li>
+    </ul>
+</div>
+
+{{ content }}
+
+<div id="footer">
+    <p>&copy; 2014&ndash;{{ date +"%Y" }} {{ printf %s "$site_owner_name" }}</p>
+</div> 
+</body>
+</html>

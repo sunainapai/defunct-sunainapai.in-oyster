@@ -1,0 +1,16 @@
+{% assign numbers = 'zero:one:two:three' | split: ':' %}
+{% assign names = include.images | split: ':' %}
+{% assign n = names | size %}
+
+<figure id="{{ numbers[n] }}-up">
+    {% for name in names %}
+        {% unless forloop.first %}
+        -->{% endunless %}<a
+            href="{{site.url}}/img/{{ include.url }}/{{ name }}.jpg"
+            target="_blank"><img
+            src="{{site.url}}/img/{{ include.url}}/{{ name }}-small.jpg"
+            alt="Image: {{ name }}.jpg"></a>{% unless forloop.last %}<!--
+                                            {% endunless %}
+    {% endfor %}
+    <figcaption>{{ include.caption }}</figcaption>
+</figure>
